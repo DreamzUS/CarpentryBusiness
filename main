@@ -1,26 +1,19 @@
-OrderNumber = int(input('Customer order number: '))
+OrderNumber = int(input('Customer Order Number: '))
 CustName = input('Customer Name: ')
-WoodType = input('Wood type? ')
-CharNumber = int(input('Number of characters? '))
-CharColor = input('Color of characters? ')
+WoodType = input('Wood Type: ')
+CharNumber = int(input('Number of Characters? '))
+CharColor = input('Color of Characters? ')
 
 MinPrice = 30
 
-if WoodType == 'oak':
-    WoodCost = 15
-else:
-    WoodCost = 0
+WoodCost = 15 if WoodType == 'oak' else 0
 
-if CharNumber <= 6:
-    CharPrice = 0
-elif CharNumber >= 6:
-    CharPrice = (CharNumber - 6) * 3
+CharPrice = max(0, (CharNumber - 6) * 3)
 
-if CharColor == 'black' or 'white':
-    ColorPrice = 0
-elif CharColor == 'gold':
+ColorPrice = 0
+if CharColor not in ['black', 'white']:
     ColorPrice = 12
 
 TotalCost = MinPrice + WoodCost + CharPrice + ColorPrice
 
-print(str(CustName) + 's order with order number ' + str(OrderNumber) + ' consists of a sign made with ' + str(WoodType) + ' that has ' + str(CharNumber) + ' characters written in ' + str(CharColor) + '. This makes the final price of the sign ' + str(TotalCost) + ' dollars.')
+print(f"Order Number: {OrderNumber}: {CustName} requests a(n) {WoodType} sign with {CharNumber} characters written in {CharColor}. The final price of the sign is ${TotalCost}.")
