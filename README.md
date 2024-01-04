@@ -1,5 +1,7 @@
-# MarkDanielsCarpentry
-A program coded for my college class which adds up the price of signs.
+# Mark Daniels Carpentry
+A program coded for my college class which calculates the price of signs.
+
+Prompt:
 
 Mark Daniels is a carpenter who creates personalized house signs.  He wants an application to compute the price of any sign a customer orders, based on the following factors:
 
