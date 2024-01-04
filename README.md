@@ -1,5 +1,5 @@
 # Mark Daniels Carpentry
-A program coded for my college class which calculates the price of signs.
+A program coded for my college class which calculates the price of signs. Feel free to use this if you've been assigned the same prompt.
 
 Prompt:
 
@@ -16,5 +16,3 @@ Mark Daniels is a carpenter who creates personalized house signs.  He wants an a
 Design the pseudocode for the following:
 
  A program that accepts data for an order number, customer name, wood type, number of characters, and color of characters.  Display all the entered data and the final price for the sign.
-
-Hopefully you can find this if you're doing this for school. Feel free to copy and use this code for your answer ;)
